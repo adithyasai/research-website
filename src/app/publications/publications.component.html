@@ -2,7 +2,7 @@
     <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">Publications</h1>
 </div>
 <div class="publications-container row mt-5" *ngFor="let faculties of publicationsData.faculties; index as i">
-    <div class="col-sm-8 offset-sm-1 mt-5" *ngFor="let faculty of faculties.faculty; index as i">
+    <div class="col-sm-8 offset-sm-2 mt-5" *ngFor="let faculty of faculties.faculty; index as i">
         <h1 class="align-center">{{faculty.name}}</h1>
         <div class="years mt-5" *ngFor="let years of faculty.Years index as i;">
             <h2>{{years.year}}</h2>
@@ -26,7 +26,7 @@
     <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">Journals</h1>
 </div>
 <div class="publications-container row mt-5" *ngFor="let faculties of publicationsData.faculties; index as i">
-    <div class="col-sm-8 offset-sm-1 mt-5" *ngFor="let faculty of faculties.faculty; index as i">
+    <div class="col-sm-8 offset-sm-2 mt-5" *ngFor="let faculty of faculties.faculty; index as i">
         <h1 class="align-center">{{faculty.name}}</h1>
         <div class="years mt-5" *ngFor="let years of faculty.Years index as i;">
             <h2>{{years.year}}</h2>
@@ -50,7 +50,7 @@
     <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">Magazines</h1>
 </div>
 <div class="publications-container row mt-5" *ngFor="let faculties of publicationsData.faculties; index as i">
-    <div class="col-sm-8 offset-sm-1 mt-5" *ngFor="let faculty of faculties.faculty; index as i">
+    <div class="col-sm-8 offset-sm-2 mt-5" *ngFor="let faculty of faculties.faculty; index as i">
         <h1 class="align-center">{{faculty.name}}</h1>
         <div class="years mt-5" *ngFor="let years of faculty.Years index as i;">
             <h2>{{years.year}}</h2>

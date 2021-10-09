@@ -1,1 +1,163 @@
-<p>resources works!</p>
+<div class="resource-container container">
+    <mat-tab-group mat-align-tabs="start">
+        <mat-tab label="Projects">
+            <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+                <ngb-panel title="Student Projects">
+                    <ng-template ngbPanelContent>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                        3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                        anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus
+                        labore sustainable VHS.
+                    </ng-template>
+                </ngb-panel>
+                <ngb-panel title="Current Funded Projects">
+                    <ng-template ngbPanelContent>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                        3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                        anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus
+                        labore sustainable VHS.
+                    </ng-template>
+                </ngb-panel>
+                <ngb-panel title="Past Funded Projects">
+                    <ng-template ngbPanelContent>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                        3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                        anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus
+                        labore sustainable VHS.
+                    </ng-template>
+                </ngb-panel>
+                <ngb-panel title="Other Projects">
+                    <ng-template ngbPanelContent>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia
+                        aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                        3 wolf moon tempor,
+                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                        anim keffiyeh helvetica,
+                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus
+                        labore sustainable VHS.
+                    </ng-template>
+                </ngb-panel>
+
+            </ngb-accordion>
+
+        </mat-tab>
+        <mat-tab label="Teaching">
+            <table mat-table [dataSource]="teachingSource" class="mat-elevation-z8">
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="course">
+                    <th mat-header-cell *matHeaderCellDef> Course </th>
+                    <td mat-cell *matCellDef="let element"> {{element.course}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="description">
+                    <th mat-header-cell *matHeaderCellDef> Description </th>
+                    <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="teachingColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: teachingColumns;"></tr>
+            </table>
+
+
+        </mat-tab>
+        <mat-tab label="Useful Links">
+            <table mat-table [dataSource]="usefulSource" class="mat-elevation-z8">
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="content">
+                    <th mat-header-cell *matHeaderCellDef> Content </th>
+                    <td mat-cell *matCellDef="let element"> {{element.content}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="links">
+                    <th mat-header-cell *matHeaderCellDef> Links </th>
+                    <td mat-cell *matCellDef="let element"> <a [attr.href]="element.links" class="card-link"
+                            target="_blank">Links</a> </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="usefulDataColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: usefulDataColumns;"></tr>
+            </table>
+        </mat-tab>
+        <mat-tab label="Demos">
+            <ul>
+                <li class="mt-2">
+                    <a href="https://serc.iiit.ac.in/resources/demos/umetrix">UMETRIX - Usability Evaluation Framework for Mobile Apps based on Static Code Analysis
+                    </a>
+                </li>
+                <li class="mt-2">
+                    <a href="https://serc.iiit.ac.in/resources/demos/gamily/">Gamily - Gamification Platform For All
+
+                    </a>
+                </li>
+            </ul>
+        </mat-tab>
+        <mat-tab label="Dataset"> 
+            <h2 class="align-center">Coming Soon ....</h2>
+            </mat-tab>
+        <mat-tab label="R & D Showcase Posters">  <ul>
+            <li class="mt-2">
+                Scalable and Extensible Crawlers
+            </li>
+            <li class="mt-2">
+                VREye: Towards building a Customized Head Mount Display for Virtual Reality Applications
+            </li>
+            <li class="mt-2">
+                Identifying the cyberattacks from the Text
+            </li>
+            <li class="mt-2">
+                Impact of Covid on Virtual Lab
+            </li>
+            <li class="mt-2">
+                VREye: Towards building a Customized Head Mount Display for Virtual Reality Applications
+            </li>
+            <li class="mt-2">
+                VREye: Towards building a Customized Head Mount Display for Virtual Reality Applications
+            </li>
+            <li class="mt-2">
+                VREye: Towards building a Customized Head Mount Display for Virtual Reality Applications
+            </li>
+           
+        </ul></mat-tab>
+    </mat-tab-group>
+</div>

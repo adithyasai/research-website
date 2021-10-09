@@ -95,3 +95,17 @@ ul.timeline-3 {
   border: 1px solid #BFD5EA !important;
   border-radius: 10px !important;
 }
+
+.resource-container{
+  .mat-tab-body-content{
+    margin:30px;
+    height: auto;
+  }
+  .card {
+    margin:10px;
+    color:black;
+  }
+  .btn {
+    color: black;
+  }
+}

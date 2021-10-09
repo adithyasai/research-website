@@ -46,6 +46,8 @@ export class HomeComponent implements OnInit {
   ];
   
   ngOnInit(): void {
+    this.userData = this.userData.individual[0];
+
   }
 
 

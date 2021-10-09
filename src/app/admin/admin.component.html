@@ -1,31 +1,50 @@
 <div class="admin-container container">
-    <div class="divider-new">
-        <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">Add News Event</h1>
-    </div>    
-    <div class="form-outline">
-        <mat-form-field class="col-sm-12" appearance="fill">
-            <mat-label>Head Lines</mat-label>
-            <input matInput placeholder="" [(ngModel)]="username">
-          </mat-form-field>
-    </div>
-    <div class="form-outline">
-        <mat-form-field appearance="fill" class="col-sm-6">
-            <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="datepicker" [(ngModel)]="date" class="col-sm-12">
-            <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
-            <mat-datepicker #datepicker>
-              <mat-datepicker-actions>
-                <button mat-button matDatepickerCancel>Cancel</button>
-                <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
-              </mat-datepicker-actions>
-            </mat-datepicker>
-          </mat-form-field>
-    </div>
-    <div class="form-outline">
-        <mat-form-field class="col-sm-12" appearance="fill">
-            <mat-label>Address 2</mat-label>
-            <textarea matInput [(ngModel)]="address"></textarea>
-          </mat-form-field>
-    </div>
-    <button (click)="saveNews()" class="btn btn-outline-dark mb-4 mr-3">Save News</button>
+  <div class="divider-new">
+    <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">Add News Event</h1>
+  </div>
+  <div class="form-outline">
+    <mat-form-field class="col-sm-12" appearance="fill">
+      <mat-label>Head Lines</mat-label>
+      <input matInput placeholder="" [(ngModel)]="username">
+    </mat-form-field>
+  </div>
+  <div class="form-outline">
+    <mat-form-field appearance="fill" class="col-sm-6">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="datepicker" [(ngModel)]="date" class="col-sm-12">
+      <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+      <mat-datepicker #datepicker>
+        <mat-datepicker-actions>
+          <button mat-button matDatepickerCancel>Cancel</button>
+          <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+        </mat-datepicker-actions>
+      </mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="form-outline">
+    <mat-form-field class="col-sm-12" appearance="fill">
+      <mat-label>Address 2</mat-label>
+      <textarea matInput [(ngModel)]="address"></textarea>
+    </mat-form-field>
+  </div>
+  <button (click)="saveNews()" class="btn btn-outline-dark mb-4 mr-3"  routerLink="/app-event">Save News</button>
+
+  <div class="divider-new">
+    <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">Add Foucs Area</h1>
+  </div>
+  <div class="form-outline">
+    <mat-form-field class="col-sm-12" appearance="fill">
+      <mat-label>Image URL</mat-label>
+      <input matInput placeholder="" [(ngModel)]="imgurl">
+    </mat-form-field>
+  </div>
+  <div class="form-outline">
+    <mat-form-field class="col-sm-12" appearance="fill">
+      <mat-label>Area Name</mat-label>
+      <input matInput placeholder="" [(ngModel)]="areaname">
+    </mat-form-field>
+  </div>
+
+  <button (click)="saveFoucsArea()" class="btn btn-outline-dark mb-4 mr-3" routerLink="/app-focusareas">Save Foucs Area</button>
+
 </div>

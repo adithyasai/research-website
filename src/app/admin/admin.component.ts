@@ -4,6 +4,7 @@ import { EventComponent } from '../event/event.component';
 import { PeopleComponent } from '../people/people.component';
 import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
 import { formatDate } from '@angular/common';
+import { FocusareasComponent } from '../focusareas/focusareas.component';
 
 @Component({
   selector: 'app-admin',
@@ -15,21 +16,27 @@ export class AdminComponent implements OnInit {
   username: String = '';
   date = "";
   address = "";
-  eventObject: any ;
+
+  areaname = '';
+  imgurl = '';
+
+  eventObject: any;
+  foucsAreaObject: any;
 
   public data: any;
- 
+
   constructor() {
   }
 
   ngOnInit(): void {
 
     this.eventObject = new EventComponent();
-    
+    this.foucsAreaObject = new FocusareasComponent();
+
   }
 
   saveNews() {
-    var formatedDate = formatDate(this.date , 'dd MMM yyyy' , 'en-US');
+    var formatedDate = formatDate(this.date, 'dd MMM yyyy', 'en-US');
     let eventData = {
       "headLine": this.username,
       "Date": formatedDate,
@@ -38,8 +45,18 @@ export class AdminComponent implements OnInit {
     };
     this.eventObject.eventsData.News.push(eventData);
     this.username = '';
-    this.date='';
-    this.address='';
+    this.date = '';
+    this.address = '';
+  }
+
+  saveFoucsArea() {
+    let foucsAreaData = {
+      "image": this.imgurl,
+      "Name": this.areaname
+
+    };
+    this.foucsAreaObject.focusAreas.push(foucsAreaData);
+    console.log(this.foucsAreaObject.focusAreas);
   }
 
 }

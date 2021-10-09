@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import * as userData from '../../assets/SiteData/individualUserData.json';
+import { ActivatedRoute, Router } from '@angular/router';
+import * as userInfo from '../../assets/SiteData/individualUserData.json';
 
 @Component({
   selector: 'app-individualprofile',
@@ -7,25 +8,20 @@ import * as userData from '../../assets/SiteData/individualUserData.json';
   styleUrls: ['./individualprofile.component.scss']
 })
 export class IndividualprofileComponent implements OnInit {
-  userData: any = (userData as any).default;
+  userData: any = (userInfo as any).default;
+  id: any = '';
   
-  items: any = [];
-  pageOfItems: Array<any> = [];
-  @Output() changePage = new EventEmitter<any>(true);
-  @Input() initialPage = 1;
-  @Input() pageSize = 10;
-  @Input() maxPages = 10;
-  constructor() { }
+
+  constructor( private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.items = Array(250).fill(9).map((x, i) => ({ id: (i + 1), name: `Item ${i + 1}`}));
+   
+    console.log(this.userData);
+    this.id = this.route.snapshot.paramMap.get('id');
+    this.userData = this.userData.individual[this.id];
+
+    console.log(this.id)
 
   }
-
-  onChangePage(pageOfItems: Array<any>) {
-    // update current page of items
-    this.pageOfItems = pageOfItems;
-    console.log(this.userData);
-}
 
 }

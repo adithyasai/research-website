@@ -24,6 +24,7 @@ import { AdminComponent } from './admin/admin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { JwPaginationModule } from 'jw-angular-pagination';
 import { NgJsonEditorModule } from 'ang-jsoneditor' 
+import { NgxTweetModule } from "ngx-tweet";
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { NgJsonEditorModule } from 'ang-jsoneditor'
     DemoMaterialModule,
     FormsModule ,
     NgJsonEditorModule,
+    NgxTweetModule,
     RouterModule.forRoot([
 
       { path: 'app-home', component: HomeComponent },
@@ -60,7 +62,7 @@ import { NgJsonEditorModule } from 'ang-jsoneditor'
       { path: 'app-faculty', component: PeopleComponent },
       { path: 'app-phdStudent', component: PeopleComponent },
       { path: 'app-msStudent', component: PeopleComponent },
-      { path: 'app-individualprofile', component: IndividualprofileComponent },
+      { path: 'app-individualprofile/:id', component: IndividualprofileComponent },
       { path: 'app-publications', component: PublicationsComponent },
       { path: 'app-focusareas', component: FocusareasComponent },
       { path: 'app-event', component: EventComponent },

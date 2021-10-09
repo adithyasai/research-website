@@ -1,4 +1,4 @@
-<div class="faculty-container container  mt-5">
+<div class="faculty-container container  mt-5"  *ngIf="userData !=null">
   <div class="row basic-info">
     <div class="card mb-3">
       <div class="row g-0">
@@ -40,10 +40,10 @@
   </div>
   <div class="progress-content row mt-5">
     <div class="single-progress-box col-sm-4 mt-4" *ngFor="let research of userData.researchIntrests; index as i">
-      <h5 >{{research.area}}</h5>
+      <h5>{{research.area}}</h5>
       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-info" role="progressbar"  [ngStyle]="{'width': [research.percentage]}" aria-valuenow="10"
-          aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+          [ngStyle]="{'width': [research.percentage]}" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
   </div>
@@ -112,17 +112,22 @@
       <div class="years mt-5" *ngFor="let years of publications.Years index as i;">
         <h2>{{years.year}}</h2>
         <div class="card mt-3" *ngFor="let publications of years.publicationsOfYear index as i;">
-            <div class="card-body" >
-                <a [attr.href]="publications.ee" class="card-link" target="_blank"><i class="fa fa-eye"
-                        aria-hidden="true"></i></a>
-                <span class="card-text ml-2" *ngFor="let authors of publications.authors index as i;">
-                    {{authors.name}},
-                </span>
-                <h5 class="card-title ml-4 mt-3">{{publications.title}} <span class="sub-text">{{publications.venue}}
-                    {{publications.volume}}</span></h5>
-            </div> 
+          <div class="card-body">
+            <a [attr.href]="publications.ee" class="card-link" target="_blank"><i class="fa fa-eye"
+                aria-hidden="true"></i></a>
+            <span class="card-text ml-2" *ngFor="let authors of publications.authors index as i;">
+              {{authors.name}},
+            </span>
+            <h5 class="card-title ml-4 mt-3">{{publications.title}} <span class="sub-text">{{publications.venue}}
+                {{publications.volume}}</span></h5>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
+<div class="faculty-container container mt-5"  *ngIf="userData ==null">
+  <h2 class="align-center">Data yet to upload ....</h2>
 </div>
 
 <!-- main app container -->
