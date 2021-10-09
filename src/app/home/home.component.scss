@@ -1,0 +1,95 @@
+// .carousel{
+//     width: 100%;
+// }
+.carousel-image{
+     height: 500px;
+}
+
+
+.carousel-caption{
+  
+
+    h3{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+
+}
+
+
+/* Counts */
+.counts-container{
+    .inner-container{
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #BFD5EA;
+        padding: 85px 15px 88px 15px;
+        box-shadow: 0 0 0 20px #fff;
+        border-radius: 30px;
+    }
+    .single-counter-box{
+        text-align: center;
+    }
+    
+    .count-text{
+        display: block;
+        font-size: 50px;
+        font-family: 'EB Garamond', serif;
+        line-height: 60px;
+        font-weight: 500;
+        color: black;
+        margin-bottom: 5px;
+    }
+    
+    .text{
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    
+}
+
+/*Faculty */
+.faculty-container{
+    .content-box{
+        padding: 20px;
+    }
+    .name {
+        font-size: 36px;
+        line-height: 45px;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+    .designation{
+        font-size: 16px;
+    font-weight: 500;
+    color: #0690cd;
+    }
+    .text{
+        margin-bottom: 34px;
+    }
+    .faculty{
+height: 100%;    
+}
+    .social-links{
+        list-style: none;
+        li{
+            display: inline-block;
+            margin: 20px;
+            a{
+                display: inline-block;
+                font-size: 12px;
+                color: #7a7d8a !important;
+                background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #BFD5EA;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+       
+    }
+}
+

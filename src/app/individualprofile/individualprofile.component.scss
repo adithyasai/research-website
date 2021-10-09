@@ -1,0 +1,133 @@
+.faculty-container{
+    .content-box{
+        padding: 20px;
+    }
+    .name {
+        font-size: 36px;
+        line-height: 45px;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+    .designation{
+        font-size: 16px;
+    font-weight: 500;
+    color: #0690cd;
+    }
+    .text{
+        margin-bottom: 34px;
+    }
+    .faculty{
+        width:  -webkit-fill-available;
+    }
+    .social-links{
+        list-style: none;
+        li{
+            display: inline-block;
+            margin: 20px;
+            a{
+                display: inline-block;
+                font-size: 12px;
+                color: #7a7d8a !important;
+                background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #BFD5EA;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+            }
+        }
+       
+    }
+}
+
+.education{
+
+    .horizontal-timeline .items {
+        border-top: 3px solid #BFD5EA;
+      }
+      
+      .bg-info{
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #BFD5EA !important;
+    
+      }
+      .horizontal-timeline .items .items-list {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+        margin-right: 0;
+      }
+      
+      .horizontal-timeline .items .items-list:before {
+        content: "";
+        position: absolute;
+        height: 36px;
+        border-right: 2px dashed #BFD5EA;
+        top: 0;
+      }
+      
+      .horizontal-timeline .items .items-list .event-date {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        width: 100px;
+        margin: 0 auto;
+        font-size: .9rem;
+        padding-top: 8px;
+      }
+      
+      @media (min-width: 1140px) {
+        .horizontal-timeline .items .items-list {
+          display: inline-block;
+          width: 24%;
+          padding-top: 45px;
+        }
+      
+        .horizontal-timeline .items .items-list .event-date {
+          top: -40px;
+        }
+      }
+}
+
+.experience-container{
+
+    .appoint-timeline li{
+        background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #BFD5EA;
+        padding-left: 95px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        margin-bottom: 25px;
+        position: relative;
+        border-radius: 100px;
+    }
+    .year{
+        margin-top: 15px;
+    }
+}
+
+.awards-list{
+    li{
+        display: inline-block;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .year{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .awards-title{
+        margin-top: 10px;
+        font-style: italic;
+    }
+}
+
+.publications-container{
+    .sub-text{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    h5{
+        font-weight: bold;
+    }
+}

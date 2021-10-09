@@ -1,0 +1,154 @@
+{
+    "faculty": [
+        {
+            "image": "https://picsum.photos/id/533/900/500",
+            "Name": "Raghu Reddy",
+            "profession": "Associate Professor & Head",
+            "id": "1"
+        },
+        {
+            "image": "https://picsum.photos/id/700/900/500",
+            "Name": "Venkatesh Choppella",
+            "profession": "Associate Professor",
+            "id": "2"
+        },
+        {
+            "image": "https://picsum.photos/id/807/900/500",
+            "Name": "Vasudeva Varma",
+            "profession": "Professor & Dean (Research)",
+            "id": "3"
+        },
+        {
+            "image": "https://picsum.photos/id/124/900/500",
+            "Name": "Ramesh Loganathan",
+            "profession": "Associate Professor & Head",
+            "id": "4"
+        },
+        {
+            "image": "https://picsum.photos/id/533/900/500",
+            "Name": "Kesav V. Nori",
+            "profession": "Distinguished Professor",
+            "id": "5"
+        },
+        {
+            "image": "https://picsum.photos/id/700/900/500",
+            "Name": "Viswanath Kasturi",
+            "profession": "Associate Professor & Head",
+            "id": "6"
+        }
+    ],
+    "phDStudents": [
+        {
+            "name": "Full Time PHD",
+            "students": [
+                {
+                    "image": "https://picsum.photos/id/533/900/500",
+                    "Name": "Lalit Mohan"
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Padmalata Nistala"
+        
+                }
+            ]
+        },
+        {
+            "name": "Part Time PHD",
+            "students": [
+                {
+                    "image": "https://picsum.photos/id/533/900/500",
+                    "Name": "Sai Anirudh Karre"
+
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Naveen N. Kulkarni"
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Abhinav Gupta"
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Mrityunjay Kumar"
+                }
+
+            ]
+        },
+        {
+            "name": "Graduated PhD Students",
+            "students": [
+                {
+                    "image": "https://picsum.photos/id/533/900/500",
+                    "Name": "Sai Karre"
+
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Kirti Garg"
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Anand Kumar"
+                }
+            ]
+        }
+    ],
+    "msStudents": [
+        {
+            "name": "Full Time",
+            "students": [
+                {
+                    "image": "https://picsum.photos/id/533/900/500",
+                    "Name": "Lalit Mohan"
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Padmalata Nistala"
+        
+                }
+            ]
+        },
+        {
+            "name": "Dual Degree (B.Tech. + M.S.)",
+            "students": [
+                {
+                    "image": "https://picsum.photos/id/533/900/500",
+                    "Name": "Sai Anirudh Karre"
+
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Naveen N. Kulkarni"
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Abhinav Gupta"
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Mrityunjay Kumar"
+                }
+
+            ]
+        },
+        {
+            "name": "Graduated",
+            "students": [
+                {
+                    "image": "https://picsum.photos/id/533/900/500",
+                    "Name": "Sai Karre"
+
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Kirti Garg"
+                },
+                {
+                    "image": "https://picsum.photos/id/700/900/500",
+                    "Name": "Anand Kumar"
+                }
+            ]
+        }
+    ]
+}

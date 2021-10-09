@@ -1,0 +1,35 @@
+{
+    "students":[
+        {
+            "image": "https://picsum.photos/id/533/900/500",
+            "Name": "Lalit Mohan",
+            "education":"PHD Student"
+        },
+        {
+            "image": "https://picsum.photos/id/700/900/500",
+            "Name": "Padmalata Nistala",
+            "education":"MS Student"
+
+
+        }
+    ],
+    "counts":[
+
+        {
+            "name":"Articles",
+            "count":"2340"
+        },
+        {
+            "name":"RESEARCHES",
+            "count":"1403"
+        },
+        {
+            "name":"SATISFIED",
+            "count":"8400"
+        },
+        {
+            "name":"MEMBERS",
+            "count":"3240"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+ <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light">
+    <links>
+        <img class="d-block logo" src="./assets/Images/iiit.png" alt="Logo" routerLink="/app-home">
+        <ul class="navbar-nav ml-auto  mt-lg-0">
+            <li class="nav-item active">
+                <a  class="nav-link" routerLink="/app-home" routerLinkActive="active">Home</a>
+            </li>          
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    People<span class="caret  ml-3"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/app-faculty">Faculty</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/app-phdStudent">PHD Students</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/app-msStudent">MS Students</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"routerLink="/app-publications">Publications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/app-focusareas">Focus Areas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/app-event">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/app-resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/app-contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/app-admin">Admin</a>
+          </li>
+        </ul>
+        
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+        <!-- <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="twitter"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="google-plus"></mdb-icon>
+          </a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link">
+            <div class="btn-group" mdbDropdown>
+              <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+              <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </a>
+        </li> -->
+      </ul>
+    </links>
+</mdb-navbar>

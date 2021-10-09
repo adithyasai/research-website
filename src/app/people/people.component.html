@@ -1,0 +1,65 @@
+<div class="divider-new" *ngIf="router == '/app-faculty'">
+    <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">Faculty</h1>
+</div>
+<div class="people-container container mt-5" *ngIf="router == '/app-faculty'"> 
+    <div class="row">
+        <div class="col-sm-4 mt-5" *ngFor="let faculty of faculty; index as i">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img [src]="faculty.image" class="img-fluid" routerLink="/app-individualprofile"/>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{faculty.Name}}
+                    </h5>
+                    <p class="card-text">
+                        {{faculty.profession}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="divider-new" *ngIf="router == '/app-phdStudent'">
+    <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">PHD Students</h1>
+</div>
+<div class="people-container container mt-5" *ngIf="router == '/app-phdStudent'">
+    <div class="" *ngFor="let phDStudents of phDStudents; index as i" > 
+        <h2 class="mt-5">{{phDStudents.name}}</h2>
+        <div class="row">
+            <div class="col-sm-4 mt-5" *ngFor="let students of phDStudents.students; index as i">
+                <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img [src]="students.image" class="img-fluid" routerLink="/app-individualprofile"/>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{students.Name}}
+                        </h5>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider-new" *ngIf="router == '/app-msStudent'">
+    <h1 class="text-center text-uppercase font-weight-bold deep-grey-text mx-3">MS Students</h1>
+</div>
+<div class="people-container container mt-5" *ngIf="router == '/app-msStudent'">
+    <div  *ngFor="let msStudents of msStudents; index as i"> 
+        <h2 class="mt-5">{{msStudents.name}}</h2>
+        <div class="row">
+            <div class="col-sm-4 mt-5" *ngFor="let students of msStudents.students; index as i">
+                <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                        <img [src]="students.image" class="img-fluid" routerLink="/app-individualprofile"/>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{students.Name}}
+                        </h5>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
